@@ -82,6 +82,30 @@ namespace forLoopPractice
             {
                 Console.WriteLine("{0} * {1} = {2}", problem6UserInput, problem6, problem6UserInput*problem6);
             }
+
+
+            //Problem 7
+            Console.WriteLine("\nProblem Seven - Display the multiplication table from 1 to a number that the user enters");
+            Console.WriteLine("\nPlease enter a number: ");
+
+            int problem7UserInput = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("You entered: " + problem7UserInput);
+            for(int problem7 = 1; problem7 < 11; problem7++)
+            {
+                for(int problem7Nest = 1; problem7Nest <= problem7UserInput; problem7Nest++)
+                {
+                    if(problem7Nest < problem7UserInput)
+                    {
+                        Console.Write("{0} * {1} = {2},  ", problem7Nest, problem7, problem7 * problem7Nest);
+                    }
+                    else
+                    {
+                        Console.Write("{0} * {1} = {2}  ", problem7Nest, problem7, problem7 * problem7Nest);
+                    }
+                }
+                Console.WriteLine();
+            }
             
 
         }
