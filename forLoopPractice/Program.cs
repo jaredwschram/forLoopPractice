@@ -26,10 +26,10 @@ namespace forLoopPractice
                 b = b + a;
                 Console.Write("{0} ", a);
             }
-            Console.WriteLine("The sum is: " + b);
+            Console.WriteLine("\nThe sum is: " + b);
 
             //Problem 3
-            Console.WriteLine("\nProblem Three - Print out N number of items and their sum");
+            Console.WriteLine("\nProblem Three - Have the user enter a number and then print out every number leading up to it and then find the sum of all numbers");
             int c = 0, d = 0;
             Console.WriteLine("\nPlease enter a number: ");
             string userInputString = Console.ReadLine();
@@ -43,9 +43,19 @@ namespace forLoopPractice
             }
             Console.WriteLine("\nThe Sum of your number is " + d);
 
-
-
-
+            //Problem 4 have the user enter numbers 1 - 10 and then find the sum and average of those numbers
+            int problem4Sum = 0;
+            float problem4Avg;
+            Console.WriteLine("\nProblem Four - Have the User enter numbers 1-10, then find the sum and average of those numbers");
+            for(int problem4 = 1; problem4 < 11; problem4++)
+            {
+                Console.Write("Enter Number-{0}: ", problem4);
+                int problem4UserInput = Convert.ToInt32(Console.ReadLine());
+                problem4Sum = problem4Sum + problem4;
+            }
+            problem4Avg = problem4Sum / 10.0f;
+            Console.WriteLine("\nThe sum of those numbers is: " + problem4Sum);
+            Console.WriteLine("\nThe average of those numbers is: " + problem4Avg);
 
 
 
