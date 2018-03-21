@@ -34,10 +34,10 @@ namespace forLoopPractice
             Console.WriteLine("\nProblem Three - Have the user enter a number and then print out every number leading up to it and then find the sum of all numbers");
             int problem3Sum = 0;
             Console.WriteLine("\nPlease enter a number: ");
-            int userInput = Convert.ToInt32(Console.ReadLine());
+            int problem3UserInput = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Your number is " + userInput);
-            for (int problem3 = 1; problem3 <= userInput; problem3++)
+            Console.WriteLine("Your number is " + problem3UserInput);
+            for (int problem3 = 1; problem3 <= problem3UserInput; problem3++)
             {
                 problem3Sum = problem3Sum + problem3;
                 Console.Write("{0} ", problem3);
@@ -70,6 +70,17 @@ namespace forLoopPractice
             {
                 problem5Cube = problem5 * problem5 * problem5;
                 Console.WriteLine("{0} cubed is {1} ", problem5, problem5Cube);
+            }
+
+            //Problem 6
+            Console.WriteLine("\nProblem Six - Have the user enter a number and then display the multiplication table of that integer(1-10)");
+            Console.WriteLine("\nPlease enter a number: ");
+            int problem6UserInput = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("You entered: " + problem6UserInput);
+            for(int problem6 = 1; problem6 < 11; problem6++)
+            {
+                Console.WriteLine("{0} * {1} = {2}", problem6UserInput, problem6, problem6UserInput*problem6);
             }
             
 
