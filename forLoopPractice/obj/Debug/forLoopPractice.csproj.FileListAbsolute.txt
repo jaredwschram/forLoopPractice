@@ -1,0 +1,7 @@
+W:\cSharp\consoleApp\forLoopPractice\forLoopPractice\bin\Debug\forLoopPractice.exe.config
+W:\cSharp\consoleApp\forLoopPractice\forLoopPractice\bin\Debug\forLoopPractice.exe
+W:\cSharp\consoleApp\forLoopPractice\forLoopPractice\bin\Debug\forLoopPractice.pdb
+W:\cSharp\consoleApp\forLoopPractice\forLoopPractice\obj\Debug\forLoopPractice.csprojResolveAssemblyReference.cache
+W:\cSharp\consoleApp\forLoopPractice\forLoopPractice\obj\Debug\forLoopPractice.csproj.CoreCompileInputs.cache
+W:\cSharp\consoleApp\forLoopPractice\forLoopPractice\obj\Debug\forLoopPractice.exe
+W:\cSharp\consoleApp\forLoopPractice\forLoopPractice\obj\Debug\forLoopPractice.pdb
