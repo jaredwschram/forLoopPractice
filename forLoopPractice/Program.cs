@@ -12,42 +12,44 @@ namespace forLoopPractice
         {
             //Problem 1
             Console.WriteLine("Problem One - Print out Numbers 1 - 10");
-            for (int a = 1; a < 11; a++)
+
+            for (int problem1 = 1; problem1 < 11; problem1++)
             {
-                Console.Write("{0} ", a);
+                Console.Write("{0} ", problem1);
             }
 
             //Problem 2
             Console.WriteLine();
             Console.WriteLine("\nProblem Two - Print out numbers 1- 10 and find the sum of those numbers");
-            int b = 0;
-            for(int a = 1; a < 11; a++)
+            int problem2Sum = 0;
+
+            for (int problem2 = 1; problem2 < 11; problem2++)
             {
-                b = b + a;
-                Console.Write("{0} ", a);
+                problem2Sum = problem2Sum + problem2;
+                Console.Write("{0} ", problem2);
             }
-            Console.WriteLine("\nThe sum is: " + b);
+            Console.WriteLine("\nThe sum is: " + problem2Sum);
 
             //Problem 3
             Console.WriteLine("\nProblem Three - Have the user enter a number and then print out every number leading up to it and then find the sum of all numbers");
-            int c = 0, d = 0;
+            int problem3Sum = 0;
             Console.WriteLine("\nPlease enter a number: ");
-            string userInputString = Console.ReadLine();
-            int userInput = Convert.ToInt32(userInputString);
+            int userInput = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Your number is " + userInput);
-            for (c = 1; c <= userInput; c++)
+            for (int problem3 = 1; problem3 <= userInput; problem3++)
             {
-                d = d + c;
-                Console.Write("{0} ",c);
+                problem3Sum = problem3Sum + problem3;
+                Console.Write("{0} ", problem3);
             }
-            Console.WriteLine("\nThe Sum of your number is " + d);
+            Console.WriteLine("\nThe Sum of your number is " + problem3Sum);
 
-            //Problem 4 have the user enter numbers 1 - 10 and then find the sum and average of those numbers
+            //Problem 4
             int problem4Sum = 0;
             float problem4Avg;
             Console.WriteLine("\nProblem Four - Have the User enter numbers 1-10, then find the sum and average of those numbers");
-            for(int problem4 = 1; problem4 < 11; problem4++)
+
+            for (int problem4 = 1; problem4 < 11; problem4++)
             {
                 Console.Write("Enter Number-{0}: ", problem4);
                 int problem4UserInput = Convert.ToInt32(Console.ReadLine());
@@ -57,7 +59,19 @@ namespace forLoopPractice
             Console.WriteLine("\nThe sum of those numbers is: " + problem4Sum);
             Console.WriteLine("\nThe average of those numbers is: " + problem4Avg);
 
+            //Problem 5
+            Console.WriteLine("\nProblem Five - Have the user enter a number and then print out every number up to it then find the cube up to a given int");
+            Console.WriteLine("\nPlease enter a number: ");
+            int problem5Cube;
+            int problem5UserInput = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("You entered: " + problem5UserInput);
+            for (int problem5 = 1; problem5 <= problem5UserInput; problem5++)
+            {
+                problem5Cube = problem5 * problem5 * problem5;
+                Console.WriteLine("{0} cubed is {1} ", problem5, problem5Cube);
+            }
+            
 
         }
     }
