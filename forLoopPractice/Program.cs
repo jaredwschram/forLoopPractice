@@ -123,8 +123,9 @@ namespace forLoopPractice
 
 
             //Problem 9
-            Console.WriteLine("Write a loop that builds a right side triangle or half pyramid");
-            for(int problem9Row = 0; problem9Row < 5; problem9Row++)
+            Console.WriteLine("Problem Nine - Write a loop that builds a right side triangle or half pyramid");
+
+            for (int problem9Row = 0; problem9Row < 5; problem9Row++)
             {
                 for(int problem9Column = 0; problem9Column < problem9Row + 1; problem9Column++)
                 {
@@ -133,7 +134,21 @@ namespace forLoopPractice
                 Console.WriteLine();
             }
 
+            //Problem 10
+            Console.WriteLine("Problem Ten - build a triangle that increments the numbers each row in the pyramid a total number of times based on user input");
 
+            Console.WriteLine("Please enter a number: ");
+            int problem10UserInput = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("You entered: " + problem10UserInput);
+            for(int problem10 = 1; problem10 <= problem10UserInput; problem10++)
+            {
+                for(int problem10Num = 1; problem10Num <= problem10; problem10Num++)
+                {
+                    Console.Write("{0} ",problem10Num);
+                }
+                Console.WriteLine();
+            }
 
 
 
