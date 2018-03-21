@@ -106,6 +106,41 @@ namespace forLoopPractice
                 }
                 Console.WriteLine();
             }
+
+            //Problem 8
+            Console.WriteLine("\nProblem Eight - have the user specify a number and then display that many odd numbers starting from zero and find their sum");
+            Console.WriteLine("\nPlease enter a number: ");
+            int problem8UserInput = Convert.ToInt32(Console.ReadLine());
+            int problem8Sum = 0;
+            Console.WriteLine("The first " + problem8UserInput + " odd numbers are: ");
+
+            for(int problem8 = 1; problem8 <= problem8UserInput; problem8++)
+            {
+                Console.Write("{0} ", 2 * problem8 -1);
+                problem8Sum += 2 * problem8 - 1;
+            }
+            Console.WriteLine("\nTheir sum is " + problem8Sum);
+
+
+            //Problem 9
+            Console.WriteLine("Write a loop that builds a right side triangle or half pyramid");
+            for(int problem9Row = 0; problem9Row < 5; problem9Row++)
+            {
+                for(int problem9Column = 0; problem9Column < problem9Row + 1; problem9Column++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+
+
+
+
+
+
+
+
             
 
         }
